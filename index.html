@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Calculadora ENEM</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-img">
+            <img src="./assets/img/undraw_doctors_p6aq.svg" alt="Feliz Natal">
+        </div>
+
+        <div id="form-container">
+            <form id="form">
+
+                <div class="form-header">
+                    <div class="title">
+                        <h1>NOTAS E PESOS</h1>
+                    </div>
+                    <div class="gabarito">
+                        <button><a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem/provas-e-gabaritos/2023" target="_blank">Gabarito Oficial 2023</a></button>
+                    </div>
+                </div>
+
+                <div class="input-notes">
+                    <div class="input-notes-box">
+                        <label for="linguagens">Linguagens</label>
+                        <input id="linguagens" type="number" required>
+                    </div>
+                    <div class="input-notes-box">
+                        <label for="humanas">Humanas</label>
+                        <input id="humanas" type="number" required>
+                    </div>
+                    <div class="input-notes-box">
+                        <label for="natureza">Natureza</label>
+                        <input id="natureza" type="number" required>
+                    </div>
+                    <div class="input-notes-box">
+                        <label for="matematica">Matemática</label>
+                        <input id="matematica" type="number" required>
+                    </div>
+                    <div class="input-notes-box">
+                        <label for="redacao">Redação</label>
+                        <input id="redacao" type="number" placeholder="0 a 1000" required>
+                    </div>
+                </div>
+
+                <div class="input-pesos">
+                    <div class="input-pesos-box">
+                        <input id="peso1" type="number" placeholder="Peso L" required>
+                    </div>
+                    <div class="input-pesos-box">
+                        <input id="peso2" type="number" placeholder="Peso H" required>
+                    </div>
+                    <div class="input-pesos-box">
+                        <input id="peso3" type="number" placeholder="Peso N" required>
+                    </div>
+                    <div class="input-pesos-box">
+                        <input id="peso4" type="number" placeholder="Peso M" required>
+                    </div>
+                    <div class="input-pesos-box">
+                        <input id="peso5" type="number" placeholder="Peso R" required>
+                    </div>
+                </div>
+
+                <div id="infos">
+                    <div id="result">
+                        <div id="notafinal">
+                            <span>Sua nota é </span>
+                            <span id="value"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="send-notes">
+                    <button onclick="calcNotas()">Calcular Média</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+</html>
